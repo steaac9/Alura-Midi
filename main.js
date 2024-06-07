@@ -1,1 +1,1 @@
-alert("Hola, Mundo")
+document.querySelector ('.tecla_pom');
