@@ -10,6 +10,12 @@ function playSonidoClap () {
 
 document.querySelector ('.tecla_clap').onclick = playSonidoClap;
 
+function playSonidoTim () {
+   document.querySelector ('#sonido_tecla_Tim').play(); 
+}
+
+document.querySelector ('.tecla_tim').onclick = playSonidoTim;
+
 function playSonidoSplash () {
     document.querySelector ('#sonido_tecla_splash').play();    
 }
