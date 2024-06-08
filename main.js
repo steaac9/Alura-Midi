@@ -14,4 +14,4 @@ function playSonidoSplash () {
     document.querySelector ('#sonido_tecla_splash').play();    
 }
 
-document.querySelector ('.tecla_spladh').onclick = playSonidoSplash;
+document.querySelector ('.tecla_splash').onclick = playSonidoSplash;
