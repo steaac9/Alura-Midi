@@ -9,3 +9,9 @@ function playSonidoClap () {
 }
 
 document.querySelector ('.tecla_clap').onclick = playSonidoClap;
+
+function playSonidoSplash () {
+    document.querySelector ('#sonido_tecla_splash').play();    
+}
+
+document.querySelector ('.tecla_spladh').onclick = playSonidoSplash;
