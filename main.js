@@ -4,9 +4,7 @@ function playSonido (idElementoAudio){
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-let contador = 0
-
-while (contador < 9) {
+for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     const tecla =listaDeTeclas[contador];
     const instrumento = tecla.classList[1];
 
@@ -16,5 +14,9 @@ while (contador < 9) {
    tecla.onclick = function (){
     playSonido(idAudio);
    };
+}
+
+while (contador < 9) {
+    
    contador = contador + 1;
 }
