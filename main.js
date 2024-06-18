@@ -1,5 +1,5 @@
-function playSonidoPom (){
-    document.querySelector('#sonido_tecla_pom').play();
+function playSonido (idElementoAudio){
+    document.querySelector(idElementoAudio).play();
 }
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
@@ -7,7 +7,9 @@ const listaDeTeclas = document.querySelectorAll('.tecla');
 let contador = 0
 
 while (contador < 9) {
-   listaDeTeclas[contador].onclick = playSonidoPom;
-   contador = contador + 1
-   console.log('Vuelta' + contador)
+   listaDeTeclas[contador].onclick = function (){
+    playSonido('#sonido_tecla_tom');
+   };
+   contador = contador + 1;
+   console.log('Vuelta' + contador);
 }
